@@ -1,29 +1,29 @@
 Algoritmo "Somador2"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
+// Professor   : Gustavo Guanabara 
+// DescriÃ§Ã£o   : Programa que somas numeros, e validando a resposta do usuÃ¡rio
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 07/12/2022
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 Resposta: Caracter
 Num, Soma, TotNum: Inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-Enquanto Resposta = ""  faça
-Escreval("Somador de números")
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
+Enquanto Resposta = ""  faÃ§a
+Escreval("Somador de nÃºmeros")
 Escreval("--------------------------------------------------------")
-Escreval("Deseja somar números? ['S'] ou ['N']? : ")
+Escreval("Deseja somar nÃºmeros? ['S'] ou ['N']? : ")
 Leia(Resposta)
-Se(Resposta != "S") e (Resposta != "N") então
-    Escreval("Vc digitou", Resposta," inválida, por favor digite novamente...")
+Se(Resposta != "S") e (Resposta != "N") entÃ£o
+    Escreval("Vc digitou", Resposta," invÃ¡lida, por favor digite novamente...")
     Resposta <- " "
  FimSe
 FimEnquanto
 
-Enquanto (Resposta = "S") ou (Resposta = "s") faça
-Escreval("Digite o número para ser somado:  ")
+Enquanto (Resposta = "S") ou (Resposta = "s") faÃ§a
+Escreval("Digite o nÃºmero para ser somado:  ")
 Leia(Num)
 Soma <- Soma + Num
 TotNum <- TotNum + 1
@@ -33,15 +33,15 @@ Escreval("--------------------------------------------------------")
 Leia(resposta)
 FimEnquanto
 
-Se Soma < 1  Então
-Escreval("Nenhum número foi digitado, total da soma = " , Soma)
+Se Soma < 1  EntÃ£o
+Escreval("Nenhum nÃºmero foi digitado, total da soma = " , Soma)
 Escreval("--------------------------------------------------------")
-Senão
-Escreval("O valor total da soma é: ", Soma)
+SenÃ£o
+Escreval("O valor total da soma Ã©: ", Soma)
 Escreval("--------------------------------------------------------")
 FimSe
 
-Escreva("A quantidade de números digitados foi de: ", TotNum)
+Escreva("A quantidade de nÃºmeros digitados foi de: ", TotNum)
 
 
 
