@@ -17,14 +17,19 @@ Enquanto Resposta = "" faça
          Escreval("Deseja somar números? ['S'] ou ['N']? : ")
          Leia(Resposta)
    Se(Resposta <> "S") e (Resposta <> "N")e(Resposta <> "s") e (Resposta <> "n")então
-    Escreval("Vc digitou ", Resposta," valor inválido, por favor digite novamente 'S' ou 'N'...")
+    Escreval("Vc digitou '", Resposta,"', este valor é inválido, por favor digite novamente 'S' ou 'N'...")
     Resposta <- ""
    FimSe
 FimEnquanto
 
 Enquanto (Resposta = "S") ou (Resposta = "s") faça
+ Num <- 11
  Escreval("Digite o numero para ser somado:  ")
  Leia(Num)
+    Se (Num = 0) e (Num <> 1) e(Num <> 2) e(Num <> 3) e(Num <> 4) e(Num <> 5) e(Num <> 6) e(Num <> 7) e(Num <> 8) e(Num <> 9) então
+      Escreva("Dígito não numérico, por escolha números de 0 à 9...")
+      Num <- ""
+    FimSe
  Soma <- Soma + Num
  TotNum <- TotNum + 1
 
